@@ -82,6 +82,13 @@ h3{
   .listItem:nth-child(even){
     color : purple;
   }
+  
+  .footer {
+    position: absolute;
+    bottom: 10px;
+    
+  }
+
   @media (max-width : 578px) {
     .main-container {
       width: 95%;
@@ -91,4 +98,7 @@ h3{
       padding: 5px 10px;
       font-size: 12px;
     }
+
   }
+
+  
