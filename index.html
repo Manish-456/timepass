@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/style/index.css">
+    <title>Timepass</title>
+</head>
+<body>
+    <div id="alert" class="alert"></div>
+    <div class="main-container">
+      <p class="p-btn">Player 0: ___ </p>
+      
+      <hr>
+  
+      <label for="weather">Select the weather type today:</label> <br>
+      <select id="weather">
+        <option value="">Make a choice</option>
+        <option value="sunny">Sunny</option>
+        <option value="rainy">Rainy</option>
+        <option value="snowing">Snowing</option>
+        <option value="overcast">Overcast</option>
+      </select>
+      <p id="content"></p>
+  
+      <div class="list">
+        List of players
+        <p class="warn">No player has been selected!</p>
+        <ol id="ul">
+  
+        </ol>
+      </div>
+  
+    </div>
+    <script src="./static/js/index.js" type="module"></script>
+</body>
+</html>
