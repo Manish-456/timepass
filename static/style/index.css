@@ -19,6 +19,11 @@
 
   }
 
+
+h3{
+  font-weight: 400;
+
+}
  
 
   hr {
@@ -61,12 +66,22 @@
   .list {
     margin-top: 40px;
   }
-
+  
   .warn {
-    font-size: 20px;
+    font-size: 18px;
     color: #808080;
   }
-
+  
+  .listItem {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: rgba(0, 0, 255, 0.892);
+  }
+  
+  .listItem:nth-child(even){
+    color : purple;
+  }
   @media (max-width : 578px) {
     .main-container {
       width: 95%;

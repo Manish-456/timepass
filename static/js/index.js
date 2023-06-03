@@ -10,20 +10,23 @@ let playerCount = 0;
 
 function updateName() {
   const name = prompt("Enter new name");
-  players.push(name);
+  const upperName = name.charAt(0).toUpperCase() + name.slice(1)
+  players.push(upperName);
   alert.textContent = `New Player added successfully`;
   playerCount++;
 
-  para.innerHTML = `player ${playerCount}: ${name}`;
-  alert.style.opacity = 1;
-  warn.style.display = "none";
-  if (players.length > 0) {
+  if (players.length > 0 && name) {
     let li = document.createElement("li");
-
+    
     players.forEach((player) => {
       li.textContent = `${player} `;
     });
+    li.setAttribute("class", "listItem")
     ul.appendChild(li);
+    para.innerHTML = `player ${playerCount}: ${name}`;
+    alert.style.opacity = 1;
+    warn.style.display = "none";
+
   }
   setTimeout(() => {
     alert.style.opacity = 0;
