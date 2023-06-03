@@ -72,4 +72,8 @@
       width: 95%;
       
     }
+    .alert{
+      padding: 5px 10px;
+      font-size: 12px;
+    }
   }
